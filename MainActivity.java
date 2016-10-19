@@ -1,4 +1,4 @@
-package com.example.administrator.myapplication;
+﻿package com.example.administrator.myapplication;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -232,7 +232,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(myStringNum.equals(null))
         {
             errorShow(errorStrings.reminderError);
-            //return;
         }
         else {
             //op等于0说明该次运算符输入是首次运算符输入
@@ -299,8 +298,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(num2==0&&op==4) {
                     errorShow("请输入非零的数");
                     tvResult.setText(null);
-//                    hisText.setText(null);
-//                    num1=0;
                 }
                 else {
                     switch (op) {
